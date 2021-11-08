@@ -105,19 +105,19 @@ public class ServerConfig {
     }
 
     public InetSocketAddress getClientPortAddress() {
-        LOG.warn("[CTEST][GET-PARAM] clientPortAddress");
+        System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] clientPortAddress");
         return clientPortAddress;
     }
     public InetSocketAddress getSecureClientPortAddress() {
-        LOG.warn("[CTEST][GET-PARAM] secureClientPortAddress");
+        System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] secureClientPortAddress");
         return secureClientPortAddress;
     }
-    public File getDataDir() { LOG.warn("[CTEST][GET-PARAM] dataDir"); return dataDir; }
-    public File getDataLogDir() { LOG.warn("[CTEST][GET-PARAM] dataLogDir"); return dataLogDir; }
-    public int getTickTime() { LOG.warn("[CTEST][GET-PARAM] tickTime"); return tickTime; }
-    public int getMaxClientCnxns() { LOG.warn("[CTEST][GET-PARAM] maxClientCnxns"); return maxClientCnxns; }
+    public File getDataDir() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] dataDir"); return dataDir; }
+    public File getDataLogDir() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] dataLogDir"); return dataLogDir; }
+    public int getTickTime() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] tickTime"); return tickTime; }
+    public int getMaxClientCnxns() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] maxClientCnxns"); return maxClientCnxns; }
     /** minimum session timeout in milliseconds, -1 if unset */
-    public int getMinSessionTimeout() { LOG.warn("[CTEST][GET-PARAM] minSessionTimeout"); return minSessionTimeout; }
+    public int getMinSessionTimeout() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] minSessionTimeout"); return minSessionTimeout; }
     /** maximum session timeout in milliseconds, -1 if unset */
-    public int getMaxSessionTimeout() { LOG.warn("[CTEST][GET-PARAM] maxSessionTimeout"); return maxSessionTimeout; }
+    public int getMaxSessionTimeout() { System.out.println("[CTEST][GET-PARAM][ZOOKEEPER] maxSessionTimeout"); return maxSessionTimeout; }
 }
